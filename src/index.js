@@ -1,1 +1,1 @@
-console.log("Restaurant page test")
+console.log("Restaurant page test");
