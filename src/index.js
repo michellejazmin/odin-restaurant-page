@@ -1,1 +1,3 @@
-console.log("Restaurant page test");
+import loadPage from "./loadPage";
+
+loadPage();

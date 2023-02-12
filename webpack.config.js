@@ -10,15 +10,15 @@ module.exports = {
   devServer: {
     static: "./dist",
   },
-  plugins: [
+  /* plugins: [
     new HtmlWebpackPlugin({
       title: "Restaurant page",
     }),
-  ],
+  ], */
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
-    clean: true,
+    clean: false,
   },
   module: {
     rules: [
