@@ -10,21 +10,23 @@ function createHeader() {
   header.classList.add("header");
 
   const navBar = document.createElement("nav");
+  navBar.id = "nav-bar";
   navBar.classList.add("navBar");
 
   const navList = document.createElement("ul");
+  navList.id = "nav-list";
   navList.classList.add("navList");
 
   const home = document.createElement("li");
-  home.classList.add("navItem");
+  home.classList.add("nav-item");
   home.textContent = "Home";
 
   const menu = document.createElement("li");
-  menu.classList.add("navItem");
+  menu.classList.add("nav-item");
   menu.textContent = "Menu";
 
   const contact = document.createElement("li");
-  contact.classList.add("navItem");
+  contact.classList.add("nav-item");
   contact.textContent = "Contact";
 
   navList.appendChild(home);
