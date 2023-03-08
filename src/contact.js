@@ -8,18 +8,26 @@ export default function loadContact() {
   contactTitle.classList.add("section-title");
 
   const address = document.createElement("p");
-  // address.innerHTML = '<b>Adress:</b> Evergreen Terrace 123'
   address.textContent = "Address";
   address.classList.add("contact-info");
 
   const phone = document.createElement("p");
-  // phone.innerHTML = "<b>Phone:</b> 555 123 456";
-  phone.textContent = "Phone: 123 456 789";
+  const phoneLabel = document.createElement("span");
+  phoneLabel.textContent = "Phone: ";
+  const phoneNum = document.createElement("a");
+  phoneNum.textContent = "123 456 789";
+  phoneNum.setAttribute("href", "tel:+1123456789");
+  phone.appendChild(phoneLabel);
+  phone.appendChild(phoneNum);
   phone.classList.add("contact-info");
 
   const email = document.createElement("p");
-  // email.innerHTML = "<b>Email:</b> <a type="email" href="mailto:">hello@antonios.it</a>";
-  email.textContent = "email@antonios.com";
+  const emailLabel = document.createElement("span");
+  emailLabel.textContent = "Email: ";
+  const emailAddress = document.createElement("a");
+  emailAddress.setAttribute("href", "mailto:email@antonios.com");
+  email.appendChild(emailLabel);
+  email.appendChild(emailAddress);
   email.classList.add("contact-info");
 
   contact.appendChild(contactTitle);
