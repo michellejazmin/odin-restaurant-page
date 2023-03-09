@@ -1,3 +1,5 @@
+import "./style.css";
+
 export default function loadMenu() {
   const main = document.getElementById("main");
   const menu = document.createElement("section");

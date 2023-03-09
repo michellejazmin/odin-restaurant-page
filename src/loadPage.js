@@ -1,6 +1,7 @@
 import loadHome from "./home";
 import loadMenu from "./menu";
 import loadContact from "./contact";
+import "./style.css";
 
 const content = document.getElementById("content");
 
@@ -11,11 +12,11 @@ function createHeader() {
 
   const navBar = document.createElement("nav");
   navBar.id = "nav-bar";
-  navBar.classList.add("navBar");
+  navBar.classList.add("nav-bar");
 
   const navList = document.createElement("ul");
   navList.id = "nav-list";
-  navList.classList.add("navList");
+  navList.classList.add("nav-list");
 
   const home = document.createElement("li");
   home.classList.add("nav-item");

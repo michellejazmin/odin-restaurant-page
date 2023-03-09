@@ -1,3 +1,5 @@
+import "./style.css";
+
 export default function loadContact() {
   const main = document.getElementById("main");
   const contact = document.createElement("section");
@@ -25,6 +27,7 @@ export default function loadContact() {
   const emailLabel = document.createElement("span");
   emailLabel.textContent = "Email: ";
   const emailAddress = document.createElement("a");
+  emailAddress.textContent = "email@antonios.com";
   emailAddress.setAttribute("href", "mailto:email@antonios.com");
   email.appendChild(emailLabel);
   email.appendChild(emailAddress);
